@@ -1,0 +1,5 @@
+#pragma once
+
+#define NBR_TABLE_CONF_MAX_NEIGHBORS 32
+#define NETSTACK_MAX_ROUTE_ENTRIES 32
+

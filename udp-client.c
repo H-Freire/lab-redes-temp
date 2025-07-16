@@ -13,7 +13,7 @@
 #include "sys/log.h"
 
 #define LOG_MODULE "Client"
-#define LOG_LEVEL  LOG_LEVEL_INFO
+#define LOG_LEVEL LOG_LEVEL_INFO
 
 #define UDP_CLIENT_PORT 8765
 #define UDP_SERVER_PORT 5678
@@ -32,7 +32,6 @@ static int16_t read_light_total(void);
 PROCESS(udp_client_process, "UDP client");
 AUTOSTART_PROCESSES(&udp_client_process);
 /*---------------------------------------------------------------------------*/
-
 static void udp_rx_callback(struct simple_udp_connection *c,
                             const uip_ipaddr_t *sender_addr,
                             uint16_t sender_port,
